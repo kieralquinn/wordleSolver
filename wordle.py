@@ -80,8 +80,8 @@ def is_possible(word, guess, correct, misplaced, absent):
     for idx, char in enumerate(word):
         if char in invalid_positions and idx in invalid_positions[char]:
             return False
-        if char in valid_positions and idx not in valid_positions[char] and valid_positions[char]:
-            return False
+        #if char in valid_positions and idx not in valid_positions[char] and valid_positions[char]:
+            #return False
 
     return True
 
